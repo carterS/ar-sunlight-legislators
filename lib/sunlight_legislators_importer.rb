@@ -23,3 +23,15 @@ end
 # rescue NotImplementedError => e
 #   $stderr.puts "You shouldn't be running this until you've modified it with your implementation!"
 # end
+# field_names = nil
+#     Student.transaction do
+#       File.open(filename).each do |line|
+#         data = line.chomp.split(',')
+#         if field_names.nil?
+#           field_names = data
+#         else
+#           attribute_hash = Hash[field_names.zip(data)]
+#           student = Student.create!(attribute_hash)
+#         end
+#       end
+#     end
